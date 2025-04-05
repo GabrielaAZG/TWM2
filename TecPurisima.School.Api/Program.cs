@@ -16,6 +16,7 @@ builder.Services.AddSwaggerGen();
 //AGREGADOOO
 builder.Services.AddSingleton<IStudentRepository, StudentRepository>();
 builder.Services.AddSingleton<ISubjectRepository, SubjectRepository>();
+builder.Services.AddSingleton<ITeacherRepository, TeacherRepository>();
 builder.Services.AddSingleton<IDbContext, DbContext>();
 
 SqlMapperExtensions.TableNameMapper = entityType =>
