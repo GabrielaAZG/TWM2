@@ -37,7 +37,7 @@ public class StudentsController : ControllerBase
         var student = new Student()
         {
             FullName = studentDto.FullName,
-            Genre = studentDto.Genre,
+            Gender = studentDto.Gender,
             CURP = studentDto.CURP,
             CreatedBy = "",
             CreatedDate = DateTime.Now,
@@ -91,7 +91,7 @@ public class StudentsController : ControllerBase
             return NotFound(response);
         }
         student.FullName = studentDto.FullName;
-        student.Genre = studentDto.Genre;
+        student.Gender = studentDto.Gender;
         student.CURP = studentDto.CURP;
         student.UpdatedBy = "";
         student.UpdatedDate = DateTime.Now;

@@ -5,7 +5,7 @@ public class TeacherDto: DtoBase
 {
     public string FullName { get; set; }
     public string Email { get; set; }
-    public string Genre { get; set; }
+    public string Gender { get; set; }
     public string CURP { get; set; }
     
     public TeacherDto()
@@ -18,7 +18,7 @@ public class TeacherDto: DtoBase
         Id= teacher.Id;
         FullName = teacher.FullName;
         Email = teacher.Email;
-        Genre = teacher.Genre;
+        Gender = teacher.Gender;
         CURP = teacher.CURP;
     }
     
