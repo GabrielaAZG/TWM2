@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecPurisima.School.Core", "TecPurisima.School.Core\TecPurisima.School.Core.csproj", "{D3B01A8A-B4AE-4000-88F0-2291B6A858F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecPurisima.School.Tests", "TecPurisima.School.Tests\TecPurisima.School.Tests.csproj", "{7BEEF7AA-A95C-47DA-B150-39370AC96F34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TecPurisima.School.Api", "TecPurisima.School.Api\TecPurisima.School.Api.csproj", "{044FC954-6DF3-4340-B474-46381864B0BD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D3B01A8A-B4AE-4000-88F0-2291B6A858F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B01A8A-B4AE-4000-88F0-2291B6A858F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B01A8A-B4AE-4000-88F0-2291B6A858F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B01A8A-B4AE-4000-88F0-2291B6A858F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7BEEF7AA-A95C-47DA-B150-39370AC96F34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BEEF7AA-A95C-47DA-B150-39370AC96F34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BEEF7AA-A95C-47DA-B150-39370AC96F34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BEEF7AA-A95C-47DA-B150-39370AC96F34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{044FC954-6DF3-4340-B474-46381864B0BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{044FC954-6DF3-4340-B474-46381864B0BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{044FC954-6DF3-4340-B474-46381864B0BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{044FC954-6DF3-4340-B474-46381864B0BD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
