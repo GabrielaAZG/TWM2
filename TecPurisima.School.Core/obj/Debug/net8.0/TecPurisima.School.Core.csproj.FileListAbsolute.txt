@@ -1,0 +1,12 @@
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\bin\Debug\net8.0\TecPurisima.School.Core.deps.json
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\bin\Debug\net8.0\TecPurisima.School.Core.dll
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\bin\Debug\net8.0\TecPurisima.School.Core.pdb
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.AssemblyInfoInputs.cache
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.AssemblyInfo.cs
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.csproj.CoreCompileInputs.cache
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.sourcelink.json
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.dll
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\refint\TecPurisima.School.Core.dll
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.pdb
+C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\ref\TecPurisima.School.Core.dll

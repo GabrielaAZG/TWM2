@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TecPurisima.School.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+85efe4f4d005558f7daf72ea886c60dda155a02c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4bbff54bca62ae8eff0860fefcd3bd8f3ced052f")]
 [assembly: System.Reflection.AssemblyProductAttribute("TecPurisima.School.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TecPurisima.School.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
