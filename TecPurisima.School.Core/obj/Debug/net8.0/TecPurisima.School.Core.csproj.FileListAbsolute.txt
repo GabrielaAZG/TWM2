@@ -10,3 +10,15 @@ C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima d
 C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\refint\TecPurisima.School.Core.dll
 C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.pdb
 C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.Core\obj\Debug\net8.0\ref\TecPurisima.School.Core.dll
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\bin\Debug\net8.0\TecPurisima.School.Core.deps.json
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\bin\Debug\net8.0\TecPurisima.School.Core.dll
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\bin\Debug\net8.0\TecPurisima.School.Core.pdb
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.AssemblyInfoInputs.cache
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.AssemblyInfo.cs
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.csproj.CoreCompileInputs.cache
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.sourcelink.json
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.dll
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\obj\Debug\net8.0\refint\TecPurisima.School.Core.dll
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\obj\Debug\net8.0\TecPurisima.School.Core.pdb
+C:\Users\aliso\OneDrive\Documentos\8vo Semestre\Tecnologias\Proyecto segundo parcial\TWM2\TecPurisima.School.Core\obj\Debug\net8.0\ref\TecPurisima.School.Core.dll

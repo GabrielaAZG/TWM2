@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj": {}
+    "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj": {
+    "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj",
         "projectName": "TecPurisima.School.Tests",
-        "projectPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj",
-        "packagesPath": "C:\\Users\\Gabriela Alva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\obj\\",
+        "projectPath": "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj",
+        "packagesPath": "C:\\Users\\aliso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gabriela Alva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aliso\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
