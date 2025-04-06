@@ -12,7 +12,7 @@ public class GroupTeacherSubjectDto: DtoBase
         
     }
     
-    public GroupTeacherSubjectDto(GroupTeacherSubject groupTeacherSubject)
+    public GroupTeacherSubjectDto(Group_Teacher_Subject groupTeacherSubject)
     {
         Id = groupTeacherSubject.Id;
         GroupId = groupTeacherSubject.GroupId;

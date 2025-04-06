@@ -1,6 +1,6 @@
 namespace TecPurisima.School.Core.Entities;
 
-public class GroupTeacherSubject: EntityBase
+public class Group_Teacher_Subject: EntityBase
 {
     
     public int GroupId { get; set; }

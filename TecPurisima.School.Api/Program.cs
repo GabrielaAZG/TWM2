@@ -19,6 +19,7 @@ builder.Services.AddSingleton<ISubjectRepository, SubjectRepository>();
 builder.Services.AddSingleton<ITeacherRepository, TeacherRepository>();
 builder.Services.AddSingleton<IGroupRepository, GroupRespository>();
 builder.Services.AddSingleton<IUserRepository, UserRepository>();
+builder.Services.AddSingleton<IGroupTeacherSubject, GroupTeacherSubjectRepository>();
 builder.Services.AddSingleton<IDbContext, DbContext>();
 SqlMapperExtensions.TableNameMapper = entityType =>
 {
