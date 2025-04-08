@@ -27,7 +27,7 @@ public class GroupTeacherSubjectRepository:IGroupTeacherSubject
 
     public async Task<List<Group_Teacher_Subject>> GetAllAsync()
     {
-        const string sql = "SELECT * FROM Student WHERE IsDeleted = 0";
+        const string sql = "SELECT * FROM Group_Teacher_Subject WHERE IsDeleted = 0";
         var groupTS = await _dbContext.Connection.QueryAsync<Group_Teacher_Subject>(sql);
         return groupTS.ToList();
     }

@@ -12,9 +12,11 @@ namespace TecPurisima.School.Api.Controllers;
 public class StudentsController : ControllerBase
 {
     private readonly IStudentRepository _studentRepository;
-    public StudentsController(IStudentRepository studentRepository) //Constructor del controlador
+    private readonly IGroupRepository _groupRepository;
+    public StudentsController(IStudentRepository studentRepository, IGroupRepository groupRepository) //Constructor del controlador
     {
         _studentRepository = studentRepository;
+        _groupRepository = groupRepository;
 
     }
     
@@ -34,6 +36,20 @@ public class StudentsController : ControllerBase
     public async Task<ActionResult<Response<StudentDto>>> Post([FromBody] StudentDto studentDto) //Metodo GetAll devuelve todas las categorias y devuelve un objeto Response que contiene la lista ProductCategory
     {
         var response = new Response<StudentDto>();
+        
+        var groupExists = await _groupRepository.ExistsAsync(studentDto.GroupId);
+        
+        if (!groupExists)
+        {
+            var errors = new List<string>();
+            if (!groupExists) errors.Add($"GroupId {studentDto.GroupId} don't exist");
+
+            response.Message = "Error";
+            response.Errors = errors;
+            return BadRequest(response);
+        }
+        
+        
         var student = new Student()
         {
             FullName = studentDto.FullName,

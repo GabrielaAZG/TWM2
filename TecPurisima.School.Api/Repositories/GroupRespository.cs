@@ -30,7 +30,7 @@ public class GroupRespository : IGroupRepository
 
     public async Task<List<SchoolGroup>> GetAllAsync()
     {
-        const string sql = "SELECT * FROM Teacher WHERE IsDeleted = 0";
+        const string sql = "SELECT * FROM SchoolGroup WHERE IsDeleted = 0";
         var groups = await _dbContext.Connection.QueryAsync<SchoolGroup>(sql);
         return groups.ToList();
     }
@@ -55,4 +55,13 @@ public class GroupRespository : IGroupRepository
         }
         return group.IsDeleted == true ? null : group;
     }
+    
+    public async Task<bool> ExistsAsync(int id)
+    {
+        var sql = "SELECT COUNT(1) FROM SchoolGroup WHERE Id = @Id AND IsDeleted = 0";
+        var count = await _dbContext.Connection.ExecuteScalarAsync<int>(sql, new { Id = id });
+        return count > 0;
+    }
+
+
 }

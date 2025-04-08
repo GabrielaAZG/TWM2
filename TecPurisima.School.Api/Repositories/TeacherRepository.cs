@@ -56,4 +56,11 @@ public class TeacherRepository: ITeacherRepository
         return teacher.IsDeleted == true ? null : teacher;
     }
     
+    public async Task<bool> ExistsAsync(int id)
+    {
+        var sql = "SELECT COUNT(1) FROM Teacher WHERE Id = @Id AND IsDeleted = 0";
+        var count = await _dbContext.Connection.ExecuteScalarAsync<int>(sql, new { Id = id });
+        return count > 0;
+    }
+    
 }

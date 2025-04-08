@@ -18,4 +18,6 @@ public interface IGroupRepository
     
     //Metodo para obtener un grupo por el id
     Task<SchoolGroup> GetById(int id);
+
+    Task<bool> ExistsAsync(int id);
 }

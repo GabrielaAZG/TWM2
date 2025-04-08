@@ -18,4 +18,8 @@ public interface ITeacherRepository
     
     //Metodo para obtener un maestro por el id
     Task<Teacher> GetById(int id);
+
+    Task<bool> ExistsAsync(int id);
+
+
 }

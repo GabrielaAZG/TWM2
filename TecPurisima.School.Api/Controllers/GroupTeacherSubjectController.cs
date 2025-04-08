@@ -12,9 +12,15 @@ namespace TecPurisima.School.Api.Controllers;
 public class GroupTeacherSubjectController:ControllerBase
 {
     private readonly IGroupTeacherSubject _groupTeacherSubject;
-    public GroupTeacherSubjectController(IGroupTeacherSubject groupTeacherSubject) //Constructor del controlador
+    private readonly IGroupRepository _groupRepository;
+    private readonly ITeacherRepository _teacherRepository;
+    private readonly ISubjectRepository _subjectRepository;
+    public GroupTeacherSubjectController(IGroupTeacherSubject groupTeacherSubject, IGroupRepository groupRepository, ITeacherRepository teacherRepository, ISubjectRepository subjectRepository) //Constructor del controlador
     {
-        _groupTeacherSubject= groupTeacherSubject;
+        _groupTeacherSubject = groupTeacherSubject;
+        _groupRepository = groupRepository;
+        _teacherRepository = teacherRepository;
+        _subjectRepository = subjectRepository;
 
     }
     
@@ -33,6 +39,24 @@ public class GroupTeacherSubjectController:ControllerBase
         Post([FromBody] GroupTeacherSubjectDto groupTeacherSubjectDto) //Metodo GetAll devuelve todas las categorias y devuelve un objeto Response que contiene la lista ProductCategory
     {
         var response = new Response<GroupTeacherSubjectDto>();
+        
+        //Agregado
+        var groupExists = await _groupRepository.ExistsAsync(groupTeacherSubjectDto.GroupId);
+        var teacherExists = await _teacherRepository.ExistsAsync(groupTeacherSubjectDto.TeacherId);
+        var subjectExists = await _subjectRepository.ExistsAsync(groupTeacherSubjectDto.SubjectId);
+        
+        if (!groupExists || !teacherExists || !subjectExists)
+        {
+            var errors = new List<string>();
+            if (!groupExists) errors.Add($"GroupId {groupTeacherSubjectDto.GroupId} don't exist");
+            if (!teacherExists) errors.Add($"TeacherId {groupTeacherSubjectDto.TeacherId} don't exist");
+            if (!subjectExists) errors.Add($"SubjectId {groupTeacherSubjectDto.SubjectId} don't exist");
+
+            response.Message = "Error";
+            response.Errors = errors;
+            return BadRequest(response);
+        }
+        
         var groupts = new Group_Teacher_Subject()
         {
             GroupId = groupTeacherSubjectDto.GroupId,

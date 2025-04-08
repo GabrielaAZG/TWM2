@@ -17,4 +17,6 @@ public interface ISubjectRepository
     
     //Metodo para obtener una materia por el id
     Task<Subject> GetById(int id);
+
+    Task<bool> ExistsAsync(int id);
 }

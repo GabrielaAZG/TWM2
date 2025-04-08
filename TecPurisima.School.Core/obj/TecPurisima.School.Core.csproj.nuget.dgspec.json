@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {}
+    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {
+    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj",
         "projectName": "TecPurisima.School.Core",
-        "projectPath": "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj",
-        "packagesPath": "C:\\Users\\aliso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aliso\\OneDrive\\Documentos\\8vo Semestre\\Tecnologias\\Proyecto segundo parcial\\TWM2\\TecPurisima.School.Core\\obj\\",
+        "projectPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj",
+        "packagesPath": "C:\\Users\\Gabriela Alva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aliso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Gabriela Alva\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
