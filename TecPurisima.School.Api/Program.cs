@@ -3,6 +3,8 @@ using TecPurisima.School.Api.DataAccess;
 using TecPurisima.School.Api.DataAccess.Interfaces;
 using TecPurisima.School.Api.Repositories;
 using TecPurisima.School.Api.Repositories.Interfaces;
+using TecPurisima.School.Api.Services;
+using TecPurisima.School.Api.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,13 +16,25 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //AGREGADOOO
+builder.Services.AddSingleton<IAdminRepository, AdminRepository>();
+builder.Services.AddSingleton<IGradeRepository, GradeRepository>();
+builder.Services.AddSingleton<IGroupRepository, GroupRespository>();
 builder.Services.AddSingleton<IStudentRepository, StudentRepository>();
+builder.Services.AddSingleton<ISubject_GradeRepository, Subject_GradeRepository>();
 builder.Services.AddSingleton<ISubjectRepository, SubjectRepository>();
 builder.Services.AddSingleton<ITeacherRepository, TeacherRepository>();
-builder.Services.AddSingleton<IGroupRepository, GroupRespository>();
-builder.Services.AddSingleton<IUserRepository, UserRepository>();
-builder.Services.AddSingleton<IGroupTeacherSubject, GroupTeacherSubjectRepository>();
+
+//AGREGADOOO
+builder.Services.AddScoped<IAdminService, AdminService>();
+builder.Services.AddScoped<IGradeService, GradeService>();
+builder.Services.AddScoped<IGroupService, GroupService>();
+builder.Services.AddScoped<IStudentService, StudentService>();
+builder.Services.AddScoped<ISubject_GradeService, Subject_GradeService>();
+builder.Services.AddScoped<ISubjectService, SubjectService>();
+builder.Services.AddScoped<ITeacherService, TeacherService>();
+
 builder.Services.AddSingleton<IDbContext, DbContext>();
+
 SqlMapperExtensions.TableNameMapper = entityType =>
 {
     var name = entityType.ToString();

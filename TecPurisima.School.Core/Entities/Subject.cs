@@ -4,3 +4,4 @@ public class Subject: EntityBase
 {
     public string SubjectName { get; set; }
 }
+

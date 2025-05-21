@@ -1,52 +1,45 @@
 using Microsoft.AspNetCore.Mvc;
 using TecPurisima.School.Api.Repositories.Interfaces;
+using TecPurisima.School.Api.Services.Interfaces;
 using TecPurisima.School.Core.Dto;
 using TecPurisima.School.Core.Entities;
 using TecPurisima.School.Core.Http;
 
-
 namespace TecPurisima.School.Api.Controllers;
 
-
 [ApiController]//Esto hace que la clase sea un endpoint
-[Route("api/[controller]")]
+[Route("api/[controller]")]//Esta es la ruta: api/ProductBrands
 
 public class SubjectsController : ControllerBase
 {
-    private readonly ISubjectRepository _subjectRepository;
-    public SubjectsController(ISubjectRepository subjectRepository) //Constructor del controlador
+    private readonly ISubjectService _subjectService;
+    public SubjectsController(ISubjectService subjectService) //Constructor del controlador
     {
-        _subjectRepository = subjectRepository;
+        
+        _subjectService = subjectService;
 
     }
     
     
     [HttpGet] //Este método responde a solicitudes GET
-    public async Task<ActionResult<Response<List<Subject>>>> GetAll() //Metodo GetAll devuelve todas las categorias y devuelve un objeto Response que contiene la lista ProductCategory
+    public async Task<ActionResult<Response<List<Subject>>>> GetAll() //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
     {
-        var response = new Response<List<SubjectDto>>();
-        var categories = await _subjectRepository.GetAllAsync();
-        
-        response.Data = categories.Select(c => new SubjectDto(c)).ToList();
+        var response = new Response<List<SubjectDto>>
+        {
+            Data = await _subjectService.GetAllAsync(),
+        };
         return Ok(response);
     }
     
     [HttpPost] //Este método responde a solicitudes POST
-    public async Task<ActionResult<Response<SubjectDto>>> Post([FromBody] SubjectDto subjectDto) //Metodo GetAll devuelve todas las categorias y devuelve un objeto Response que contiene la lista ProductCategory
+    public async Task<ActionResult<Response<SubjectDto>>> Post([FromBody] SubjectDto subjectDto) //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
     {
-        var response = new Response<SubjectDto>();
-        var subject = new Subject()
+        var response = new Response<SubjectDto>
         {
-            SubjectName = subjectDto.SubjectName,
-            CreatedBy = "",
-            CreatedDate = DateTime.Now,
-            UpdatedBy = "",
-            UpdatedDate = DateTime.Now
+            Data = await _subjectService.SaveAsync(subjectDto)
         };
-        subject = await _subjectRepository.SaveAsync(subject);
-        subject.Id = subject.Id;
-        response.Data = subjectDto;
-        return Created($"/api/[controller]/{subjectDto.Id}", response);
+
+        return Created($"/api/[controller]/{response.Data.Id}", response);
 
     }
 
@@ -55,15 +48,14 @@ public class SubjectsController : ControllerBase
     public async Task<ActionResult<Response<SubjectDto>>> GetById(int id)
     {
         var response = new Response<SubjectDto>();
-        var subject = await _subjectRepository.GetById(id);
         
-        if (subject == null)
+        if (!await _subjectService.SubjectExist(id))
         {
             response.Errors.Add(("Subject Not Found"));
             return NotFound(response);
         }
-        var subjectDto = new SubjectDto(subject);
-        response.Data = subjectDto;
+      
+        response.Data = await _subjectService.GetById(id);
         return Ok(response);
     }
 
@@ -71,10 +63,9 @@ public class SubjectsController : ControllerBase
     [Route("{id:int}")]
     public async Task<ActionResult<Response<bool>>> Delete(int id)
     {
-        
-        var boolResult = await _subjectRepository.DeleteAsync(id);
         var response = new Response<bool>();
-        response.Data = boolResult;
+        var result = await _subjectService.DeleteAsync(id);
+        response.Data = result;
         return Ok(response);
     }
 
@@ -82,17 +73,14 @@ public class SubjectsController : ControllerBase
     public async Task<ActionResult<Response<SubjectDto>>> Update([FromBody] SubjectDto subjectDto)
     {
         var response = new Response<SubjectDto>();
-        var subject = await _subjectRepository.GetById(subjectDto.Id);
-        if (subject == null)
+        
+        if (!await _subjectService.SubjectExist(subjectDto.Id))
         {
             response.Errors.Add(("Subject Not Found"));
             return NotFound(response);
         }
-        subject.SubjectName = subjectDto.SubjectName;
-        subject.UpdatedBy = "";
-        subject.UpdatedDate = DateTime.Now;
-        await _subjectRepository.UpdateAsync(subject);
-        response.Data = subjectDto;
+        
+        response.Data = await _subjectService.UpdateAsync(subjectDto);
         return Ok(response);
     }
 }

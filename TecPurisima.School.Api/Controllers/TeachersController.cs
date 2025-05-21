@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using TecPurisima.School.Api.Repositories.Interfaces;
+using TecPurisima.School.Api.Services.Interfaces;
 using TecPurisima.School.Core.Dto;
 using TecPurisima.School.Core.Entities;
 using TecPurisima.School.Core.Http;
@@ -7,47 +8,38 @@ using TecPurisima.School.Core.Http;
 namespace TecPurisima.School.Api.Controllers;
 
 [ApiController]//Esto hace que la clase sea un endpoint
-[Route("api/[controller]")]
+[Route("api/[controller]")]//Esta es la ruta: api/ProductBrands
 
 public class TeachersController : ControllerBase
 {
-    private readonly ITeacherRepository _teacherRepository;
-    public TeachersController(ITeacherRepository teacherRepository) //Constructor del controlador
+    private readonly ITeacherService _teacherService;
+    public TeachersController(ITeacherService teacherService) //Constructor del controlador
     {
-        _teacherRepository = teacherRepository;
+        
+        _teacherService = teacherService;
 
     }
     
     
     [HttpGet] //Este método responde a solicitudes GET
-    public async Task<ActionResult<Response<List<Teacher>>>> GetAll() //Metodo GetAll devuelve todas las categorias y devuelve un objeto Response que contiene la lista ProductCategory
+    public async Task<ActionResult<Response<List<Teacher>>>> GetAll() //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
     {
-        var response = new Response<List<TeacherDto>>();
-        var teachers = await _teacherRepository.GetAllAsync();
-        
-        response.Data = teachers.Select(c => new TeacherDto(c)).ToList();
+        var response = new Response<List<TeacherDto>>
+        {
+            Data = await _teacherService.GetAllAsync(),
+        };
         return Ok(response);
     }
     
     [HttpPost] //Este método responde a solicitudes POST
-    public async Task<ActionResult<Response<TeacherDto>>> Post([FromBody] TeacherDto teacherDto) //Metodo GetAll devuelve todas las categorias y devuelve un objeto Response que contiene la lista ProductCategory
+    public async Task<ActionResult<Response<TeacherDto>>> Post([FromBody] TeacherDto teacherDto) //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
     {
-        var response = new Response<TeacherDto>();
-        var teacher = new Teacher()
+        var response = new Response<TeacherDto>
         {
-            FullName = teacherDto.FullName,
-            Email = teacherDto.Email,
-            Gender = teacherDto.Gender,
-            CURP = teacherDto.CURP,
-            CreatedBy = "",
-            CreatedDate = DateTime.Now,
-            UpdatedBy = "",
-            UpdatedDate = DateTime.Now
+            Data = await _teacherService.SaveAsync(teacherDto)
         };
-        teacher = await _teacherRepository.SaveAsync(teacher);
-        teacher.Id = teacher.Id;
-        response.Data = teacherDto;
-        return Created($"/api/[controller]/{teacherDto.Id}", response);
+
+        return Created($"/api/[controller]/{response.Data.Id}", response);
 
     }
 
@@ -56,15 +48,14 @@ public class TeachersController : ControllerBase
     public async Task<ActionResult<Response<TeacherDto>>> GetById(int id)
     {
         var response = new Response<TeacherDto>();
-        var teacher = await _teacherRepository.GetById(id);
         
-        if (teacher == null)
+        if (!await _teacherService.TeacherExist(id))
         {
             response.Errors.Add(("Teacher Not Found"));
             return NotFound(response);
         }
-        var teacherDto = new TeacherDto(teacher);
-        response.Data = teacherDto;
+      
+        response.Data = await _teacherService.GetById(id);
         return Ok(response);
     }
 
@@ -72,10 +63,9 @@ public class TeachersController : ControllerBase
     [Route("{id:int}")]
     public async Task<ActionResult<Response<bool>>> Delete(int id)
     {
-        
-        var boolResult = await _teacherRepository.DeleteAsync(id);
         var response = new Response<bool>();
-        response.Data = boolResult;
+        var result = await _teacherService.DeleteAsync(id);
+        response.Data = result;
         return Ok(response);
     }
 
@@ -83,20 +73,14 @@ public class TeachersController : ControllerBase
     public async Task<ActionResult<Response<TeacherDto>>> Update([FromBody] TeacherDto teacherDto)
     {
         var response = new Response<TeacherDto>();
-        var teacher = await _teacherRepository.GetById(teacherDto.Id);
-        if (teacher == null)
+        
+        if (!await _teacherService.TeacherExist(teacherDto.Id))
         {
             response.Errors.Add(("Teacher Not Found"));
             return NotFound(response);
         }
-        teacher.FullName = teacherDto.FullName;
-        teacher.Email = teacherDto.Email;
-        teacher.Gender = teacherDto.Gender;
-        teacher.CURP = teacherDto.CURP;
-        teacher.UpdatedBy = "";
-        teacher.UpdatedDate = DateTime.Now;
-        await _teacherRepository.UpdateAsync(teacher);
-        response.Data = teacherDto;
+        
+        response.Data = await _teacherService.UpdateAsync(teacherDto);
         return Ok(response);
     }
 }
