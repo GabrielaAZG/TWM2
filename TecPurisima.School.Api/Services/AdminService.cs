@@ -77,4 +77,14 @@ public class AdminService: IAdminService
         var adminDto = new AdminDto(admin);
         return adminDto;
     }
+    
+    public async Task<Admin?> LoginAsync(string username, string password)
+    {
+        var admin = await _adminRepository.GetByUsernameAsync(username);
+
+        if (admin == null || admin.Password != password) 
+            return null;
+
+        return admin;
+    }
 }

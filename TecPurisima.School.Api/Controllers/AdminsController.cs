@@ -13,6 +13,7 @@ namespace TecPurisima.School.Api.Controllers;
 public class AdminsController : ControllerBase
 {
     private readonly IAdminService _adminService;
+    
     public AdminsController(IAdminService adminService) //Constructor del controlador
     {
         
@@ -34,13 +35,13 @@ public class AdminsController : ControllerBase
     [HttpPost] //Este método responde a solicitudes POST
     public async Task<ActionResult<Response<AdminDto>>> Post([FromBody] AdminDto adminDto) //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
     {
-        var response = new Response<AdminDto>
-        {
-            Data = await _adminService.SaveAsync(adminDto)
-        };
+            var response = new Response<AdminDto>
+            {
+                Data = await _adminService.SaveAsync(adminDto)
+            };
 
-        return Created($"/api/[controller]/{response.Data.Id}", response);
-
+            return Created($"/api/[controller]/{response.Data.Id}", response);
+        
     }
 
     [HttpGet] //Este método responde a solicitudes GET BY ID

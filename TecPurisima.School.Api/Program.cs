@@ -3,12 +3,14 @@ using TecPurisima.School.Api.DataAccess;
 using TecPurisima.School.Api.DataAccess.Interfaces;
 using TecPurisima.School.Api.Repositories;
 using TecPurisima.School.Api.Repositories.Interfaces;
+using TecPurisima.School.Api.Seeders;
 using TecPurisima.School.Api.Services;
 using TecPurisima.School.Api.Services.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -32,8 +34,9 @@ builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<ISubject_GradeService, Subject_GradeService>();
 builder.Services.AddScoped<ISubjectService, SubjectService>();
 builder.Services.AddScoped<ITeacherService, TeacherService>();
-
+//builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 builder.Services.AddSingleton<IDbContext, DbContext>();
+
 
 SqlMapperExtensions.TableNameMapper = entityType =>
 {
@@ -46,6 +49,7 @@ SqlMapperExtensions.TableNameMapper = entityType =>
 };
 
 var app = builder.Build();
+await AdminSeeder.SeedSuperAdminAsync(app.Services);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -54,8 +58,11 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
 
+
+app.UseHttpsRedirection();
+//AGREGADO
+//app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

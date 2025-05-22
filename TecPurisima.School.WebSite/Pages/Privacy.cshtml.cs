@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace TecPurisima.School.WebSite.Pages;
-
+[Authorize(Roles = "superadmin")]
 public class PrivacyModel : PageModel
 {
     private readonly ILogger<PrivacyModel> _logger;

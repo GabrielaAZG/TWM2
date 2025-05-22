@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\TecPurisima.School.WebSite.props" />
+</Project>

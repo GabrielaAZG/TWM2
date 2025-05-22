@@ -33,7 +33,14 @@ public class AdminRepository: IAdminRepository
     {
         const string sql = "SELECT * FROM Admin WHERE IsDeleted = 0";
         var admins = await _dbContext.Connection.QueryAsync<Admin>(sql);
-        return admins.ToList();
+        return admins.Select(a => new Admin
+        {
+            Id = a.Id,
+            FullName = a.FullName,
+            User = a.User,
+            Email = a.Email,
+            Role = a.Role,
+        }).ToList();
     }
 
     public async Task<bool> DeleteAsync(int id)
@@ -55,5 +62,19 @@ public class AdminRepository: IAdminRepository
             return null;
         }
         return admin.IsDeleted == true ? null : admin;
+    }
+    
+    public async Task<Admin> GetByUsernameAsync(string username)
+    {
+        var connection = _dbContext.Connection;
+        const string query = "SELECT * FROM Admin WHERE User = @Username LIMIT 1";
+        return await connection.QueryFirstOrDefaultAsync<Admin>(query, new { Username = username });
+    }
+
+
+    public async Task CreateAsync(Admin admin)
+    {
+        var connection = _dbContext.Connection;
+        await connection.InsertAsync(admin);
     }
 }

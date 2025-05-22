@@ -17,4 +17,6 @@ public interface IAdminRepository
     
     //Metodo para obtener un alumno por el id
     Task<Admin> GetById(int id);
+    Task<Admin> GetByUsernameAsync(string username);
+    Task CreateAsync(Admin admin);
 }

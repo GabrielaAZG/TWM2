@@ -1,0 +1,19 @@
+@page
+@model TecPurisima.School.WebSite.Pages.LoginModel
+@{
+    ViewData["Title"] = "Login";
+}
+<h2>Login</h2>
+
+<form method="post">
+    <label>User</label>
+    <input asp-for="User" />
+    <label>Password</label>
+    <input type="password" asp-for="Password" />
+    <button type="submit">Log In</button>
+</form>
+
+@if (!string.IsNullOrEmpty(Model.ErrorMessage))
+{
+    <p style="color:red">@Model.ErrorMessage</p>
+}
