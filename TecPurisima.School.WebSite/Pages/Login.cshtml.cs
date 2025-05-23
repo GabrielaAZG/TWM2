@@ -35,7 +35,8 @@ public class LoginModel : PageModel
         {
             new Claim(ClaimTypes.Name, admin.FullName),
             new Claim("AdminId", admin.Id.ToString()),
-            new Claim(ClaimTypes.Role, admin.Role)
+            new Claim(ClaimTypes.Role, admin.Role),
+            
         };
 
         var identity = new ClaimsIdentity(claims, "AdminCookie");

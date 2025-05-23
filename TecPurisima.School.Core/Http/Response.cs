@@ -1,4 +1,6 @@
 using System.Runtime.InteropServices.JavaScript;
+using TecPurisima.School.Core.Dto;
+
 namespace TecPurisima.School.Core.Http;
 
 public class Response<T>

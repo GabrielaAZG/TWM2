@@ -1,0 +1,52 @@
+@page
+@model TecPurisima.School.WebSite.Pages.Teacher.Add
+
+<div class="container-fluid">
+    <div class="rom">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h2>Add</h2>
+            <form method="post">
+                <input type="hidden" asp-for="Teacher"/>
+                <div class="form-group">
+                    <label asp-for="Teacher.FullName" ></label>
+                    <input asp-for="Teacher.FullName" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="Teacher.FullName"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label asp-for="Teacher.Email"></label>
+                    <input asp-for="Teacher.Email" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="Teacher.Email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Teacher.Age"></label>
+                    <input asp-for="Teacher.Age" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="Teacher.Age"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Teacher.CURP"></label>
+                    <input asp-for="Teacher.CURP" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="Teacher.CURP"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Teacher.Gender"></label>
+                    <input asp-for="Teacher.Gender" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="Teacher.Gender"></span>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <button type="submit" class="btn btn-primary mr-3">Save</button>
+                        <a class="btn btn-secondary">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+       
+
+    </div>
+</div>

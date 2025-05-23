@@ -3,6 +3,12 @@ using TecPurisima.School.Api.DataAccess.Interfaces;
 using TecPurisima.School.Api.Repositories;
 using TecPurisima.School.Api.Repositories.Interfaces;
 using TecPurisima.School.Api.Services;
+using TecPurisima.School.WebSite.Services.Interfaces;
+using ISubjectService = TecPurisima.School.WebSite.Services.Interfaces.ISubjectService;
+using SubjectService = TecPurisima.School.WebSite.Services.SubjectService;
+using TeacherService = TecPurisima.School.WebSite.Services.TeacherService;
+using GradeService = TecPurisima.School.WebSite.Services.GradeService;
+
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -13,6 +19,9 @@ builder.Services.AddRazorPages();
 builder.Services.AddScoped<AdminService>();
 builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 builder.Services.AddScoped<IDbContext, DbContext>(); 
+builder.Services.AddScoped<ITeacherService, TeacherService>();
+builder.Services.AddScoped<ISubjectService, SubjectService>();
+builder.Services.AddScoped<IGradeService, GradeService>();
 
 builder.Services.AddAuthentication("AdminCookie")
     .AddCookie("AdminCookie", options =>

@@ -1,0 +1,28 @@
+@page
+@model TecPurisima.School.WebSite.Pages.Subject.Add
+
+<div class="container-fluid">
+    <div class="rom">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h2>Add</h2>
+            <form method="post">
+                <input type="hidden" asp-for="Subjects"/>
+                <div class="form-group">
+                    <label asp-for="Subjects.SubjectName" ></label>
+                    <input asp-for="Subjects.SubjectName" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="Subjects.SubjectName"></span>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <button type="submit" class="btn btn-primary mr-3">Save</button>
+                        <a class="btn btn-secondary">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+       
+
+    </div>
+</div>

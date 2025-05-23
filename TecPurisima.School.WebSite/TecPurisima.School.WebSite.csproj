@@ -17,13 +17,8 @@
 
     <ItemGroup>
       <Folder Include="Pages\Admin\" />
-      <Folder Include="Pages\Grade\" />
       <Folder Include="Pages\Group\" />
-      <Folder Include="Pages\Student\" />
-      <Folder Include="Pages\Subject\" />
       <Folder Include="Pages\Subject_Grade\" />
-      <Folder Include="Pages\Teacher\" />
-      <Folder Include="Services\Interfaces\" />
     </ItemGroup>
 
     <ItemGroup>

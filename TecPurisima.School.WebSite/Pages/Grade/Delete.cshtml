@@ -1,0 +1,28 @@
+@page "{id:int}"
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model TecPurisima.School.WebSite.Pages.Grade.Delete
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h2>Delete</h2>
+            <form method="post">
+                <input type="hidden" asp-for="grade.Id"/>
+                <div class="form-group">
+                    <label asp-for="grade.SchoolGrade"></label>
+                    <input readonly asp-for="grade.SchoolGrade" class="form-control" maxlength="45"/>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <button type="submit" class="btn btn-danger mr-3">Delete</button>
+                        <a class="btn btn-secondary">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+
+    </div>
+</div>

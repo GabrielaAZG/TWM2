@@ -1,0 +1,55 @@
+@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model TecPurisima.School.WebSite.Pages.Teacher.List
+
+<div class="container-fluid">
+    <form method="get">
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <br/>
+                <button id = "btnSearch" class="btn btn-primary mr-3">Search</button>
+                <a asp-area="" asp-page="/Teacher/Add"
+                   class="btn btn-info" role="button">
+                    <i class="fas fa-plus-circle me-2"></i>Add
+                </a>
+            </div>
+        </div>
+    </form>
+    
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <table class="table">
+                <tr>
+                    <th>FullName</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>CURP</th>
+                    <th>Gender</th>
+                    
+                    <th></th>
+                </tr>
+                @foreach (var teacher in @Model.Teachers)
+                {
+                    <tr>
+                        <td>@teacher.FullName</td>
+                        <td>@teacher.Email</td>
+                        <td>@teacher.Age</td>
+                        <td>@teacher.CURP</td>
+                        <td>@teacher.Gender</td>
+                        
+                        <td>
+                            <a asp-area="" asp-page="/Teacher/Edit" asp-route-id="@teacher.Id"
+                               class="btn btn-primary" role="button">Edit</a>
+                            <a asp-area="" asp-page="/Teacher/Delete" asp-route-id="@teacher.Id"
+                               class="btn btn-danger" role="button">Delete</a>
+                            
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
