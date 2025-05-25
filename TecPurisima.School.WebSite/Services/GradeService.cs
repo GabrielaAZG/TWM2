@@ -10,11 +10,28 @@ public class GradeService: IGradeService
     
     private readonly string _baseUrl = "http://localhost:5279/";
     private readonly string _endpoint = "api/Grades";
+    private readonly IHttpContextAccessor _httpContextAccessor;
+    
+    public GradeService(IHttpContextAccessor httpContextAccessor)
+    {
+        _httpContextAccessor = httpContextAccessor;
+    }
+    
+    private HttpClient CreateHttpClient()
+    {
+        var client = new HttpClient();
+        var userName = _httpContextAccessor.HttpContext?.User?.Identity?.Name ?? "Unkown";
+
+        // Agrega un header personalizado con el nombre del usuario
+        client.DefaultRequestHeaders.Add("X-User", userName);
+
+        return client;
+    }
     
     public async Task<Response<List<GradeDto>>> GetAllAsync()
     {
         var url = $"{_baseUrl}{_endpoint}";
-        var client = new HttpClient();
+        var client =  CreateHttpClient();
         var res = await client.GetAsync(url);
         var json = await res.Content.ReadAsStringAsync();
         
@@ -26,7 +43,7 @@ public class GradeService: IGradeService
     public async Task<Response<GradeDto>> GetByIdAsync(int id)
     {
         var url = $"{_baseUrl}{_endpoint}/{id}";
-        var client = new HttpClient();
+        var client = CreateHttpClient();
         var res = await client.GetAsync(url);
         var json = await res.Content.ReadAsStringAsync();
         
@@ -40,7 +57,7 @@ public class GradeService: IGradeService
         var url = $"{_baseUrl}{_endpoint}";
         var jsonRequest = JsonConvert.SerializeObject(grade);
         var content = new StringContent(jsonRequest, System.Text.Encoding.UTF8, "application/json");
-        var client = new HttpClient();
+        var client = CreateHttpClient();
         var res = await client.PostAsync(url, content);
         var json = await res.Content.ReadAsStringAsync();
         
@@ -54,7 +71,7 @@ public class GradeService: IGradeService
         var url = $"{_baseUrl}{_endpoint}";
         var jsonRequest = JsonConvert.SerializeObject(grade);
         var content = new StringContent(jsonRequest, System.Text.Encoding.UTF8, "application/json");
-        var client = new HttpClient();
+        var client = CreateHttpClient();
         var res = await client.PutAsync(url, content);
         var json = await res.Content.ReadAsStringAsync();
 
@@ -67,7 +84,7 @@ public class GradeService: IGradeService
     {
         var url = $"{_baseUrl}{_endpoint}/{id}";
        
-        var client = new HttpClient();
+        var client = CreateHttpClient();
         var res = await client.DeleteAsync(url);
         var json = await res.Content.ReadAsStringAsync();
         

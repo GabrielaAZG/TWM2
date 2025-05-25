@@ -2,7 +2,7 @@
 @model TecPurisima.School.WebSite.Pages.Admin.Edit
 
 <div class="container-fluid">
-    <div class="rom">
+    <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
             <h2>Add</h2>
@@ -14,19 +14,19 @@
                     <span class="text-danger" asp-validation-for="admin.FullName"></span>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="admin.User" ></label>
                     <input asp-for="admin.User" class="form-control" maxlength="45"/>
                     <span class="text-danger" asp-validation-for="admin.User"></span>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="admin.Password" ></label>
                     <input asp-for="admin.Password" class="form-control" maxlength="45"/>
                     <span class="text-danger" asp-validation-for="admin.Password"></span>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="admin.Email" ></label>
                     <input asp-for="admin.Email" class="form-control" maxlength="45"/>
                     <span class="text-danger" asp-validation-for="admin.Email"></span>
@@ -35,7 +35,7 @@
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <button type="submit" class="btn btn-primary mr-3">Save</button>
-                        <a class="btn btn-secondary">Cancel</a>
+                        <a asp-area="" asp-page="/Admin/List" class="btn btn-secondary" role="button">Cancel</a>
                     </div>
                 </div>
             </form>

@@ -39,6 +39,7 @@ public class AdminRepository: IAdminRepository
             FullName = a.FullName,
             User = a.User,
             Email = a.Email,
+            Password = a.Password,
             Role = a.Role,
         }).ToList();
     }

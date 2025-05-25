@@ -14,6 +14,8 @@ public class AdminService: IAdminService
         _adminRepository = adminRepository;
     }
     
+    
+    
     public async Task<bool> AdminExist(int id)
     {
         var admin = await _adminRepository.GetById(id);

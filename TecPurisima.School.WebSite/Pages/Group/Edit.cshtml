@@ -9,19 +9,19 @@
             <h2>Editing</h2>
             <form method="post">
                 <input type="hidden" asp-for="Groups.Id"/>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="Groups.GroupName" ></label>
                     <input asp-for="Groups.GroupName" class="form-control" maxlength="45"/>
                     <span class="text-danger" asp-validation-for="Groups.GroupName"></span>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="Groups.GradeId" ></label>
                     <input asp-for="Groups.GradeId" class="form-control" maxlength="45"/>
                     <span class="text-danger" asp-validation-for="Groups.GradeId"></span>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="Groups.TeacherId" ></label>
                     <input asp-for="Groups.TeacherId" class="form-control" maxlength="45"/>
                     <span class="text-danger" asp-validation-for="Groups.TeacherId"></span>
@@ -30,7 +30,7 @@
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <button type="submit" class="btn btn-primary mr-3">Save</button>
-                        <a class="btn btn-secondary">Cancel</a>
+                        <a asp-area="" asp-page="/Group/List" class="btn btn-secondary" role="button">Cancel</a>
                     </div>
                 </div>
             </form>

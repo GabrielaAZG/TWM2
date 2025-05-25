@@ -9,22 +9,22 @@
             <h2>Delete</h2>
             <form method="post">
                 <input type="hidden" asp-for="admin.Id"/>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="admin.FullName"></label>
                     <input readonly asp-for="admin.FullName" class="form-control" maxlength="45"/>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="admin.User"></label>
                     <input readonly asp-for="admin.User" class="form-control" maxlength="45"/>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="admin.Password"></label>
                     <input readonly asp-for="admin.Password" class="form-control" maxlength="45"/>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="admin.Email"></label>
                     <input readonly asp-for="admin.Email" class="form-control" maxlength="45"/>
                 </div>
@@ -32,7 +32,7 @@
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <button type="submit" class="btn btn-danger mr-3">Delete</button>
-                        <a class="btn btn-secondary">Cancel</a>
+                        <a asp-area="" asp-page="/Admin/List" class="btn btn-secondary" role="button">Cancel</a>
                     </div>
                 </div>
             </form>

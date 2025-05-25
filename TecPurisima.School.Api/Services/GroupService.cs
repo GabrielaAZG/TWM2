@@ -10,12 +10,20 @@ public class GroupService: IGroupService
     private readonly IGroupRepository _groupRepository;
     private readonly IGradeRepository _gradeRepository;
     private readonly ITeacherRepository _teacherRepository;
+    private readonly IHttpContextAccessor _httpContextAccessor;
     
-    public GroupService(IGroupRepository groupRepository, IGradeRepository gradeRepository, ITeacherRepository teacherRepository )
+    public GroupService(IGroupRepository groupRepository, IGradeRepository gradeRepository, ITeacherRepository teacherRepository, IHttpContextAccessor httpContextAccessor )
     {
         _groupRepository = groupRepository;
         _gradeRepository = gradeRepository;
         _teacherRepository = teacherRepository;
+        _httpContextAccessor = httpContextAccessor;
+    }
+    
+    private string GetCurrentUser()
+    {
+        var headers = _httpContextAccessor.HttpContext?.Request?.Headers;
+        return headers != null && headers.ContainsKey("X-User") ? headers["X-User"].ToString() : "System";
     }
     
     public async Task<bool> SchoolGroupExist(int id)
@@ -38,9 +46,9 @@ public class GroupService: IGroupService
             GroupName = groupDto.GroupName,
             GradeId = groupDto.GradeId,
             TeacherId = groupDto.TeacherId,
-            CreatedBy = "",
+            CreatedBy = GetCurrentUser(),
             CreatedDate = DateTime.Now,
-            UpdatedBy = "",
+            UpdatedBy = GetCurrentUser(),
             UpdatedDate = DateTime.Now
         };
         group = await _groupRepository.SaveAsync(group);
@@ -67,7 +75,7 @@ public class GroupService: IGroupService
         group.GroupName = groupDto.GroupName;
         group.GradeId = groupDto.GradeId;
         group.TeacherId = groupDto.TeacherId;
-        group.UpdatedBy = "";
+        group.UpdatedBy = GetCurrentUser();
         group.UpdatedDate = DateTime.Now; 
         await _groupRepository.UpdateAsync(group);
       

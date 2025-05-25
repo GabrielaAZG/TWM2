@@ -8,10 +8,18 @@ namespace TecPurisima.School.Api.Services;
 public class GradeService: IGradeService
 {
     private readonly IGradeRepository _gradeRepository;
+    private readonly IHttpContextAccessor _httpContextAccessor;
     
-    public GradeService(IGradeRepository gradeRepository)
+    public GradeService(IGradeRepository gradeRepository, IHttpContextAccessor httpContextAccessor)
     {
         _gradeRepository = gradeRepository;
+        _httpContextAccessor = httpContextAccessor;
+    }
+    
+    private string GetCurrentUser()
+    {
+        var headers = _httpContextAccessor.HttpContext?.Request?.Headers;
+        return headers != null && headers.ContainsKey("X-User") ? headers["X-User"].ToString() : "System";
     }
     
     public async Task<bool> GradeExist(int id)
@@ -25,9 +33,9 @@ public class GradeService: IGradeService
         var grade = new Grade
         {
             SchoolGrade = gradeDto.SchoolGrade,
-            CreatedBy = "",
+            CreatedBy = GetCurrentUser(),
             CreatedDate = DateTime.Now,
-            UpdatedBy = "",
+            UpdatedBy = GetCurrentUser(),
             UpdatedDate = DateTime.Now
         };
         grade = await _gradeRepository.SaveAsync(grade);
@@ -43,7 +51,7 @@ public class GradeService: IGradeService
             throw new Exception("School Grade not found");
         }
         grade.SchoolGrade = gradeDto.SchoolGrade;
-        grade.UpdatedBy = "";
+        grade.UpdatedBy = GetCurrentUser();
         grade.UpdatedDate = DateTime.Now;
         
         await _gradeRepository.UpdateAsync(grade);

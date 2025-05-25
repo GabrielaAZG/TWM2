@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto 3er Parcial\\TWM2\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj": {}
+    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto 3er Parcial\\TWM2\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj": {
+    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto 3er Parcial\\TWM2\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj",
         "projectName": "TecPurisima.School.Tests",
-        "projectPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto 3er Parcial\\TWM2\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj",
-        "packagesPath": "C:\\Users\\aliso\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto 3er Parcial\\TWM2\\TecPurisima.School.Tests\\obj\\",
+        "projectPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\TecPurisima.School.Tests.csproj",
+        "packagesPath": "C:\\Users\\Gabriela Alva\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\aliso\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Gabriela Alva\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -76,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

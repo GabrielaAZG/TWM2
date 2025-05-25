@@ -19,6 +19,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+//....
+builder.Services.AddHttpContextAccessor();//AGREGADO PARA VER CUAL ES EL USUARIO LOGGEADO
 //AGREGADO---------------------------------(borrar si no funciona)
 //AUTHENTICATION
 builder.Services.AddScoped<AdminService>();

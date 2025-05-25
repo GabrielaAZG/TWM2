@@ -8,10 +8,17 @@ namespace TecPurisima.School.Api.Services;
 public class SubjectService: ISubjectService
 {
     private readonly ISubjectRepository _subjectRepository;
+    private readonly IHttpContextAccessor _httpContextAccessor;
     
-    public SubjectService(ISubjectRepository subjectRepository)
+    public SubjectService(ISubjectRepository subjectRepository, IHttpContextAccessor httpContextAccessor)
     {
         _subjectRepository = subjectRepository;
+        _httpContextAccessor = httpContextAccessor;
+    }
+    private string GetCurrentUser()
+    {
+        var headers = _httpContextAccessor.HttpContext?.Request?.Headers;
+        return headers != null && headers.ContainsKey("X-User") ? headers["X-User"].ToString() : "System";
     }
     
     public async Task<bool> SubjectExist(int id)
@@ -25,9 +32,9 @@ public class SubjectService: ISubjectService
         var subject = new Subject
         {
             SubjectName = subjectDto.SubjectName,
-            CreatedBy = "",
+            CreatedBy = GetCurrentUser(),
             CreatedDate = DateTime.Now,
-            UpdatedBy = "",
+            UpdatedBy = GetCurrentUser(),
             UpdatedDate = DateTime.Now
         };
         subject = await _subjectRepository.SaveAsync(subject);
@@ -43,7 +50,7 @@ public class SubjectService: ISubjectService
             throw new Exception("Subject not found");
         }
         subject.SubjectName = subjectDto.SubjectName;
-        subject.UpdatedBy = "";
+        subject.UpdatedBy = GetCurrentUser();
         subject.UpdatedDate = DateTime.Now; 
         await _subjectRepository.UpdateAsync(subject);
       

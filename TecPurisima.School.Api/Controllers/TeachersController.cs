@@ -22,7 +22,7 @@ public class TeachersController : ControllerBase
     
     
     [HttpGet] //Este método responde a solicitudes GET
-    public async Task<ActionResult<Response<List<Teacher>>>> GetAll() //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
+    public async Task<ActionResult<Response<List<TeacherDto>>>> GetAll() //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
     {
         var response = new Response<List<TeacherDto>>
         {

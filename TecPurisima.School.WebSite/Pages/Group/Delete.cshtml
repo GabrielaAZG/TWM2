@@ -9,17 +9,17 @@
             <h2>Delete</h2>
             <form method="post">
                 <input type="hidden" asp-for="Group.Id"/>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="Group.GroupName"></label>
                     <input readonly asp-for="Group.GroupName" class="form-control" maxlength="45"/>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="Group.GradeId"></label>
                     <input readonly asp-for="Group.GradeId" class="form-control" maxlength="45"/>
                 </div>
 
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="Group.TeacherId"></label>
                     <input readonly asp-for="Group.TeacherId" class="form-control" maxlength="45"/>
                 </div>
@@ -27,7 +27,7 @@
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <button type="submit" class="btn btn-danger mr-3">Delete</button>
-                        <a class="btn btn-secondary">Cancel</a>
+                        <a asp-area="" asp-page="/Group/List" class="btn btn-secondary" role="button">Cancel</a>
                     </div>
                 </div>
             </form>

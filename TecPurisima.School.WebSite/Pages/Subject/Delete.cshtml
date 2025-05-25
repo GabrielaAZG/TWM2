@@ -9,7 +9,7 @@
             <h2>Delete</h2>
             <form method="post">
                 <input type="hidden" asp-for="Subject.Id"/>
-                <div class="form-group">
+                <div class="form-group mb-3">
                     <label asp-for="Subject.SubjectName"></label>
                     <input readonly asp-for="Subject.SubjectName" class="form-control" maxlength="45"/>
                 </div>
@@ -17,7 +17,7 @@
                 <div class="row">
                     <div class="col-md-12 text-right">
                         <button type="submit" class="btn btn-danger mr-3">Delete</button>
-                        <a class="btn btn-secondary">Cancel</a>
+                        <a asp-area="" asp-page="/Subject/List" class="btn btn-secondary" role="button">Cancel</a>
                     </div>
                 </div>
             </form>

@@ -22,7 +22,7 @@ public class StudentsController : ControllerBase
     
     
     [HttpGet] //Este método responde a solicitudes GET
-    public async Task<ActionResult<Response<List<Student>>>> GetAll() //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
+    public async Task<ActionResult<Response<List<StudentDto>>>> GetAll() //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
     {
         var response = new Response<List<StudentDto>>
         {
@@ -34,6 +34,9 @@ public class StudentsController : ControllerBase
     [HttpPost] //Este método responde a solicitudes POST
     public async Task<ActionResult<Response<StudentDto>>> Post([FromBody] StudentDto studentDto) //Metodo GetAll devuelve todas las marcas y devuelve un objeto Response que contiene la lista ProductBrand
     {
+        //var userName = Request.Headers["X-User"].ToString();
+        //Console.WriteLine("Usuario que hizo la operación: " + userName);
+        //
         var response = new Response<StudentDto>();
         try
         {

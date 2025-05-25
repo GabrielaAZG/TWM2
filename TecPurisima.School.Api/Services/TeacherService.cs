@@ -8,10 +8,18 @@ namespace TecPurisima.School.Api.Services;
 public class TeacherService: ITeacherService
 {
     private readonly ITeacherRepository _teacherRepository;
+    private readonly IHttpContextAccessor _httpContextAccessor;
     
-    public TeacherService(ITeacherRepository teacherRepository)
+    public TeacherService(ITeacherRepository teacherRepository, IHttpContextAccessor httpContextAccessor)
     {
         _teacherRepository = teacherRepository;
+        _httpContextAccessor = httpContextAccessor;
+    }
+    
+    private string GetCurrentUser()
+    {
+        var headers = _httpContextAccessor.HttpContext?.Request?.Headers;
+        return headers != null && headers.ContainsKey("X-User") ? headers["X-User"].ToString() : "System";
     }
     
     public async Task<bool> TeacherExist(int id)
@@ -29,9 +37,9 @@ public class TeacherService: ITeacherService
             Age = teacherDto.Age,
             CURP = teacherDto.CURP,
             Gender = teacherDto.Gender,
-            CreatedBy = "",
+            CreatedBy = GetCurrentUser(),
             CreatedDate = DateTime.Now,
-            UpdatedBy = "",
+            UpdatedBy = GetCurrentUser(),
             UpdatedDate = DateTime.Now
         };
         teacher = await _teacherRepository.SaveAsync(teacher);
@@ -51,7 +59,7 @@ public class TeacherService: ITeacherService
         teacher.Age = teacherDto.Age;
         teacher.CURP = teacherDto.CURP;
         teacher.Gender = teacherDto.Gender;
-        teacher.UpdatedBy = "";
+        teacher.UpdatedBy = GetCurrentUser();
         teacher.UpdatedDate = DateTime.Now; 
         await _teacherRepository.UpdateAsync(teacher);
       

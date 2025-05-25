@@ -10,12 +10,20 @@ public class Subject_GradeService: ISubject_GradeService
     private readonly ISubject_GradeRepository _subjectgradeRepository;
     private readonly IGradeRepository _gradeRepository;
     private readonly ISubjectRepository _subjectRepository;
+    private readonly IHttpContextAccessor _httpContextAccessor;
     
-    public Subject_GradeService(ISubject_GradeRepository subjectgradeRepository, IGradeRepository gradeRepository, ISubjectRepository subjectRepository)
+    public Subject_GradeService(ISubject_GradeRepository subjectgradeRepository, IGradeRepository gradeRepository, ISubjectRepository subjectRepository, IHttpContextAccessor httpContextAccessor)
     {
         _subjectgradeRepository = subjectgradeRepository;
         _gradeRepository = gradeRepository;
         _subjectRepository = subjectRepository;
+        _httpContextAccessor = httpContextAccessor;
+    }
+    
+    private string GetCurrentUser()
+    {
+        var headers = _httpContextAccessor.HttpContext?.Request?.Headers;
+        return headers != null && headers.ContainsKey("X-User") ? headers["X-User"].ToString() : "System";
     }
     
     public async Task<bool> Subject_GradeExist(int id)
@@ -37,9 +45,9 @@ public class Subject_GradeService: ISubject_GradeService
         {
             GradeId = subjectgradeDto.GradeId,
             SubjectId = subjectgradeDto.SubjectId,
-            CreatedBy = "",
+            CreatedBy = GetCurrentUser(),
             CreatedDate = DateTime.Now,
-            UpdatedBy = "",
+            UpdatedBy = GetCurrentUser(),
             UpdatedDate = DateTime.Now
         };
         subjectgrade = await _subjectgradeRepository.SaveAsync(subjectgrade);
@@ -65,7 +73,7 @@ public class Subject_GradeService: ISubject_GradeService
         
         subjectgrade.GradeId = subjectgradeDto.GradeId;
         subjectgrade.SubjectId = subjectgradeDto.SubjectId;
-        subjectgrade.UpdatedBy = "";
+        subjectgrade.UpdatedBy = GetCurrentUser();
         subjectgrade.UpdatedDate = DateTime.Now; 
         await _subjectgradeRepository.UpdateAsync(subjectgrade);
       

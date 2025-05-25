@@ -2,6 +2,7 @@ using TecPurisima.School.Api.Repositories.Interfaces;
 using TecPurisima.School.Api.Services.Interfaces;
 using TecPurisima.School.Core.Dto;
 using TecPurisima.School.Core.Entities;
+using Microsoft.AspNetCore.Http;
 
 namespace TecPurisima.School.Api.Services;
 
@@ -9,12 +10,21 @@ public class StudentService: IStudentService
 {
     private readonly IStudentRepository _studentRepository;
     private readonly IGroupRepository _groupRepository;
+    private readonly IHttpContextAccessor _httpContextAccessor;
     
-    public StudentService(IStudentRepository studentRepository, IGroupRepository groupRepository)
+    public StudentService(IStudentRepository studentRepository, IGroupRepository groupRepository, IHttpContextAccessor httpContextAccessor)
     {
         _studentRepository = studentRepository;
         _groupRepository = groupRepository;
+        _httpContextAccessor = httpContextAccessor;
     }
+
+    private string GetCurrentUser()
+    {
+        var headers = _httpContextAccessor.HttpContext?.Request?.Headers;
+        return headers != null && headers.ContainsKey("X-User") ? headers["X-User"].ToString() : "System";
+    }
+
     
     public async Task<bool> StudentExist(int id)
     {
@@ -36,9 +46,9 @@ public class StudentService: IStudentService
             Gender = studentDto.Gender,
             CURP = studentDto.CURP,
             GroupId = studentDto.GroupId,
-            CreatedBy = "",
+            CreatedBy = GetCurrentUser(),
             CreatedDate = DateTime.Now,
-            UpdatedBy = "",
+            UpdatedBy = GetCurrentUser(),
             UpdatedDate = DateTime.Now
         };
         student = await _studentRepository.SaveAsync(student);
@@ -62,7 +72,7 @@ public class StudentService: IStudentService
         student.Gender = studentDto.Gender;
         student.CURP = studentDto.CURP;
         student.GroupId = studentDto.GroupId;
-        student.UpdatedBy = "";
+        student.UpdatedBy = GetCurrentUser();
         student.UpdatedDate = DateTime.Now; 
         await _studentRepository.UpdateAsync(student);
       
