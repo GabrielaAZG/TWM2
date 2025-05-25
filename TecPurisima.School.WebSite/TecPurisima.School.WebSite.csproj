@@ -17,8 +17,6 @@
 
     <ItemGroup>
       <Folder Include="Pages\Admin\" />
-      <Folder Include="Pages\Group\" />
-      <Folder Include="Pages\Subject_Grade\" />
     </ItemGroup>
 
     <ItemGroup>

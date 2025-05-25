@@ -8,6 +8,9 @@ using ISubjectService = TecPurisima.School.WebSite.Services.Interfaces.ISubjectS
 using SubjectService = TecPurisima.School.WebSite.Services.SubjectService;
 using TeacherService = TecPurisima.School.WebSite.Services.TeacherService;
 using GradeService = TecPurisima.School.WebSite.Services.GradeService;
+using GroupService = TecPurisima.School.WebSite.Services.GroupService;
+using StudentService = TecPurisima.School.WebSite.Services.StudentService;
+using Subject_GradeService = TecPurisima.School.WebSite.Services.Subject_GradeService;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,6 +25,11 @@ builder.Services.AddScoped<IDbContext, DbContext>();
 builder.Services.AddScoped<ITeacherService, TeacherService>();
 builder.Services.AddScoped<ISubjectService, SubjectService>();
 builder.Services.AddScoped<IGradeService, GradeService>();
+builder.Services.AddScoped<IGroupService, GroupService>();
+builder.Services.AddScoped<IStudentService, StudentService>();
+builder.Services.AddScoped<ISubject_GradeService, Subject_GradeService>();
+
+
 
 builder.Services.AddAuthentication("AdminCookie")
     .AddCookie("AdminCookie", options =>

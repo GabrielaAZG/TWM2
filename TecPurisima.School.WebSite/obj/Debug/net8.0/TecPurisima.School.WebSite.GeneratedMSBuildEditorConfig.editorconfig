@@ -38,6 +38,22 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Group/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXBcQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Group/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXBcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Group/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXBcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Group/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXBcTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -58,6 +74,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Student/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Student/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Student/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Student/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -76,6 +104,22 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Subject/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdFxMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Subject_Grade/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdF9HcmFkZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Subject_Grade/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdF9HcmFkZVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Subject_Grade/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdF9HcmFkZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Subject_Grade/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdF9HcmFkZVxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Teacher/Add.cshtml]

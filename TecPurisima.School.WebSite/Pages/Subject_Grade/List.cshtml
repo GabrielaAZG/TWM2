@@ -1,0 +1,49 @@
+@page
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model TecPurisima.School.WebSite.Pages.Subject_Grade.List
+
+<div class="container-fluid">
+    <form method="get">
+        <div class="row">
+            <div class="col-md-8"></div>
+            <div class="col-md-4">
+                <br/>
+                <button id = "btnSearch" class="btn btn-primary mr-3">Search</button>
+                <a asp-area="" asp-page="/Subject_Grade/Add"
+                   class="btn btn-info" role="button">
+                    <i class="fas fa-plus-circle me-2"></i>Add
+                </a>
+            </div>
+        </div>
+    </form>
+    
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <table class="table">
+                <tr>
+                    <th>Grade ID</th>
+                    <th>Subject ID</th>
+                </tr>
+                @foreach (var subject_grade in @Model.Subjects_Grades)
+                {
+                    <tr>
+                        <td>@subject_grade.GradeId</td>
+                        <td>@subject_grade.SubjectId</td>
+
+
+
+                        <td>
+                            <a asp-area="" asp-page="/Subject_Grade/Edit" asp-route-id="@subject_grade.Id"
+                               class="btn btn-primary" role="button">Edit</a>
+                            <a asp-area="" asp-page="/Subject_Grade/Delete" asp-route-id="@subject_grade.Id"
+                               class="btn btn-danger" role="button">Delete</a>
+
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>
