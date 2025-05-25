@@ -1,0 +1,43 @@
+@page "{id:int}"
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model TecPurisima.School.WebSite.Pages.Admin.Delete
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h2>Delete</h2>
+            <form method="post">
+                <input type="hidden" asp-for="admin.Id"/>
+                <div class="form-group">
+                    <label asp-for="admin.FullName"></label>
+                    <input readonly asp-for="admin.FullName" class="form-control" maxlength="45"/>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="admin.User"></label>
+                    <input readonly asp-for="admin.User" class="form-control" maxlength="45"/>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="admin.Password"></label>
+                    <input readonly asp-for="admin.Password" class="form-control" maxlength="45"/>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="admin.Email"></label>
+                    <input readonly asp-for="admin.Email" class="form-control" maxlength="45"/>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <button type="submit" class="btn btn-danger mr-3">Delete</button>
+                        <a class="btn btn-secondary">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-1"></div>
+
+    </div>
+</div>

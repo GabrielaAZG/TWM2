@@ -1,0 +1,46 @@
+@page
+@model TecPurisima.School.WebSite.Pages.Admin.Edit
+
+<div class="container-fluid">
+    <div class="rom">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <h2>Add</h2>
+            <form method="post">
+                <input type="hidden" asp-for="admin"/>
+                <div class="form-group">
+                    <label asp-for="admin.FullName" ></label>
+                    <input asp-for="admin.FullName" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="admin.FullName"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="admin.User" ></label>
+                    <input asp-for="admin.User" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="admin.User"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="admin.Password" ></label>
+                    <input asp-for="admin.Password" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="admin.Password"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="admin.Email" ></label>
+                    <input asp-for="admin.Email" class="form-control" maxlength="45"/>
+                    <span class="text-danger" asp-validation-for="admin.Email"></span>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-12 text-right">
+                        <button type="submit" class="btn btn-primary mr-3">Save</button>
+                        <a class="btn btn-secondary">Cancel</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+       
+
+    </div>
+</div>

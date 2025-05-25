@@ -2,54 +2,156 @@
 @using Microsoft.AspNetCore.Mvc.TagHelpers
 @model TecPurisima.School.WebSite.Pages.Teacher.List
 
-<div class="container-fluid">
+<style>
+    :root {
+        --primary-blue: #2c3e50;
+        --secondary-blue: #3498db;
+        --light-blue: #ecf0f1;
+        --accent-blue: #2980b9;
+    }
+    
+    .teacher-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .action-header {
+        background: #6e8efb;
+        padding: 1.5rem;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 12px rgba(41, 128, 185, 0.15);
+    }
+    
+    .btn-search {
+        background-color: white;
+        color: #2980b9;
+        border: 2px solid white;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .btn-search:hover {
+        background-color: transparent;
+        color: white;
+    }
+    
+    .btn-add {
+        background-color: #ecf0f1;
+        color: #2c3e50;
+        font-weight: 600;
+        transition: all 0.3s;
+    }
+    
+    .btn-add:hover {
+        background-color: white;
+        transform: translateY(-2px);
+    }
+    
+    .table-container {
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+    }
+    
+    .table {
+        margin-bottom: 0;
+    }
+    
+    .table thead th {
+        background-color: #2c3e50;
+        color: white;
+        font-weight: 500;
+        text-transform: uppercase;
+        font-size: 0.85rem;
+        letter-spacing: 0.5px;
+    }
+    
+    .table tbody tr {
+        transition: background-color 0.2s;
+    }
+    
+    .table tbody tr:hover {
+        background-color: rgba(52, 152, 219, 0.05);
+    }
+    
+    .btn-edit {
+        background-color: #ecf0f1;
+        color: #2c3e50;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-delete {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .btn-action {
+        transition: all 0.2s;
+        margin: 0 3px;
+    }
+    
+    .btn-action:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    }
+</style>
+
+<div class="teacher-container">
     <form method="get">
-        <div class="row">
-            <div class="col-md-8"></div>
-            <div class="col-md-4">
-                <br/>
-                <button id = "btnSearch" class="btn btn-primary mr-3">Search</button>
-                <a asp-area="" asp-page="/Teacher/Add"
-                   class="btn btn-info" role="button">
-                    <i class="fas fa-plus-circle me-2"></i>Add
-                </a>
-            </div>
+        
+        <div class="action-header text-end">
+            <h3 class="text-start">Teachers</h3>
+            <button id="btnSearch" class="btn btn-search mr-2">
+                <i class="fas fa-search me-2"></i>Search
+            </button>
+            <a asp-area="" asp-page="/Teacher/Add" class="btn btn-add">
+                <i class="fas fa-plus-circle me-2"></i>Add Teacher
+            </a>
         </div>
     </form>
     
-    <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-10">
-            <table class="table">
+    <div class="table-container">
+        <table class="table table-hover">
+            <thead>
                 <tr>
-                    <th>FullName</th>
+                    <th>Full Name</th>
                     <th>Email</th>
                     <th>Age</th>
                     <th>CURP</th>
                     <th>Gender</th>
-                    
-                    <th></th>
+                    <th class="text-end">Actions</th>
                 </tr>
+            </thead>
+            <tbody>
                 @foreach (var teacher in @Model.Teachers)
                 {
                     <tr>
-                        <td>@teacher.FullName</td>
-                        <td>@teacher.Email</td>
-                        <td>@teacher.Age</td>
-                        <td>@teacher.CURP</td>
-                        <td>@teacher.Gender</td>
-                        
-                        <td>
+                        <td class="align-middle">@teacher.FullName</td>
+                        <td class="align-middle">@teacher.Email</td>
+                        <td class="align-middle">@teacher.Age</td>
+                        <td class="align-middle">@teacher.CURP</td>
+                        <td class="align-middle">@teacher.Gender</td>
+                        <td class="text-end">
                             <a asp-area="" asp-page="/Teacher/Edit" asp-route-id="@teacher.Id"
-                               class="btn btn-primary" role="button">Edit</a>
+                               class="btn btn-edit btn-action" role="button">
+                                <i class="fas fa-edit me-1"></i>Edit
+                            </a>
                             <a asp-area="" asp-page="/Teacher/Delete" asp-route-id="@teacher.Id"
-                               class="btn btn-danger" role="button">Delete</a>
-                            
+                               class="btn btn-danger btn-delete btn-action" role="button">
+                                <i class="fas fa-trash-alt me-1"></i>Delete
+                            </a>
                         </td>
                     </tr>
                 }
-            </table>
-        </div>
-        <div class="col-md-1"></div>
+            </tbody>
+        </table>
     </div>
 </div>
+
+<!-- Font Awesome para iconos -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

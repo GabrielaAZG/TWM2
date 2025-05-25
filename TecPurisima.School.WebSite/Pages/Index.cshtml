@@ -2,10 +2,75 @@
 @using Microsoft.AspNetCore.Authorization
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Dashboard";
 }
 @attribute [Authorize(AuthenticationSchemes = "AdminCookie")]
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+
+<style>
+    :root {
+        --primary-blue: #2c3e50;
+        --secondary-blue: #3498db;
+        --light-blue: #ecf0f1;
+        --accent-blue: #2980b9;
+    }
+    
+    .dashboard-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+    
+    .welcome-card {
+        background: #6e8efb;
+        border-radius: 12px;
+        padding: 2.5rem;
+        margin-bottom: 2rem;
+        color: white;
+        box-shadow: 0 10px 20px rgba(41, 128, 185, 0.2);
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .welcome-card::after {
+        content: "";
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200px;
+        height: 400px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 50%;
+    }
+    
+    .welcome-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .welcome-subtitle {
+        font-size: 1.2rem;
+        opacity: 0.9;
+        margin-bottom: 1.5rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    
+</style>
+
+<div class="dashboard-container">
+    <div class="welcome-card">
+        <h1 class="welcome-title">Bienvenido al Panel de Control</h1>
+        <p class="welcome-subtitle">Gestiona esta institución educativa de manera eficiente accede a los 
+            y añade registros</p>
+        
+    </div>
+    </div>
+
+
+<!-- Script para Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>

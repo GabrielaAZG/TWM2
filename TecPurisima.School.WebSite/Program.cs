@@ -11,6 +11,8 @@ using GradeService = TecPurisima.School.WebSite.Services.GradeService;
 using GroupService = TecPurisima.School.WebSite.Services.GroupService;
 using StudentService = TecPurisima.School.WebSite.Services.StudentService;
 using Subject_GradeService = TecPurisima.School.WebSite.Services.Subject_GradeService;
+using AdminServicee = TecPurisima.School.WebSite.Services.AdminService;
+
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,6 +22,7 @@ builder.Services.AddRazorPages();
 //AGREGADO---------------------------------(borrar si no funciona)
 //AUTHENTICATION
 builder.Services.AddScoped<AdminService>();
+builder.Services.AddScoped<IAdminService, AdminServicee>();
 builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 builder.Services.AddScoped<IDbContext, DbContext>(); 
 builder.Services.AddScoped<ITeacherService, TeacherService>();
@@ -28,6 +31,7 @@ builder.Services.AddScoped<IGradeService, GradeService>();
 builder.Services.AddScoped<IGroupService, GroupService>();
 builder.Services.AddScoped<IStudentService, StudentService>();
 builder.Services.AddScoped<ISubject_GradeService, Subject_GradeService>();
+
 
 
 

@@ -18,6 +18,22 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\aliso\OneDrive\Escritorio\Proyecto 3er Parcial\TWM2\TecPurisima.School.WebSite
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Admin/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Admin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Admin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Admin/List.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/aliso/OneDrive/Escritorio/Proyecto 3er Parcial/TWM2/TecPurisima.School.WebSite/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
