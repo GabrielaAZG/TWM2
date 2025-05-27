@@ -116,19 +116,21 @@
     <div class="table-container">
         <table class="table table-hover">
             <thead>
-                <tr>
-                    <th>Full Name</th>
-                    <th>Email</th>
-                    <th>Age</th>
-                    <th>CURP</th>
-                    <th>Gender</th>
-                    <th class="text-end">Actions</th>
-                </tr>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Age</th>
+                <th>CURP</th>
+                <th>Gender</th>
+                <th class="text-end">Actions</th>
+            </tr>
             </thead>
             <tbody>
                 @foreach (var teacher in @Model.Teachers)
                 {
                     <tr>
+                        <td class="align-middle">@teacher.Id</td>
                         <td class="align-middle">@teacher.FullName</td>
                         <td class="align-middle">@teacher.Email</td>
                         <td class="align-middle">@teacher.Age</td>

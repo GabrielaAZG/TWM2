@@ -115,25 +115,27 @@
     <div class="table-container">
         <table class="table table-hover">
             <thead>
-                <tr>
-                    <th>FullName</th>
-                    <th>Age</th>
-                    <th>CURP</th>
-                    <th>Gender</th>
-                    <th>GrupoId</th>
-                    <th class="text-end">Actions</th>
-                </tr>
+            <tr>
+                <th>ID</th>
+                <th>FullName</th>
+                <th>Age</th>
+                <th>CURP</th>
+                <th>Gender</th>
+                <th>GrupoId</th>
+                <th class="text-end">Actions</th>
+            </tr>
             </thead>
             <tbody>
             @foreach (var student in @Model.Students)
             {
                 <tr>
+                    <td class="align-middle">@student.Id</td>
                     <td class="align-middle">@student.FullName</td>
                     <td class="align-middle">@student.Age</td>
                     <td class="align-middle">@student.CURP</td>
                     <td class="align-middle">@student.Gender</td>
                     <td class="align-middle">@student.GroupId</td>
-                    
+
 
                     <td class="text-end">
                         <a asp-area="" asp-page="/Student/Edit" asp-route-id="@student.Id"
@@ -143,7 +145,7 @@
                         <a asp-area="" asp-page="/Student/Delete" asp-route-id="@student.Id"
                            class="btn btn-danger btn-delete btn-action" role="button">
                             <i class="fas fa-trash-alt me-1"></i>Delete
-                            </a>
+                        </a>
                     </td>
                 </tr>
             }
