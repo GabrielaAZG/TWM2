@@ -9,159 +9,159 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TecPurisima.School.WebSite
 build_property.RootNamespace = TecPurisima.School.WebSite
-build_property.ProjectDir = C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.WebSite\
+build_property.ProjectDir = C:\Users\aliso\OneDrive\Escritorio\Proyecto de WebSite\TWM2\TecPurisima.School.WebSite\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Gabriela Alva\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\Desktop\PROJECT2\TecPurisima.School\TecPurisima.School.WebSite
+build_property.MSBuildProjectDirectory = C:\Users\aliso\OneDrive\Escritorio\Proyecto de WebSite\TWM2\TecPurisima.School.WebSite
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Admin/Add.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Admin/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Admin/Delete.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Admin/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Admin/Edit.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Admin/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Admin/List.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Admin/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Error.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Grade/Add.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Grade/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Grade/Delete.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Grade/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Grade/Edit.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Grade/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Grade/List.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Grade/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JhZGVcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Group/Add.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Group/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXBcQWRkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Group/Delete.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Group/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXBcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Group/Edit.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Group/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXBcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Group/List.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Group/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR3JvdXBcTGlzdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Index.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Login.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Logout.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Privacy.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Student/Add.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Student/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Student/Delete.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Student/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Student/Edit.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Student/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Student/List.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Student/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3R1ZGVudFxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Subject/Add.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Subject/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Subject/Delete.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Subject/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Subject/Edit.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Subject/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Subject/List.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Subject/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdFxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Subject_Grade/Add.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Subject_Grade/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdF9HcmFkZVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Subject_Grade/Delete.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Subject_Grade/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdF9HcmFkZVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Subject_Grade/Edit.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Subject_Grade/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdF9HcmFkZVxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Subject_Grade/List.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Subject_Grade/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3ViamVjdF9HcmFkZVxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Teacher/Add.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Teacher/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Teacher/Delete.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Teacher/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Teacher/Edit.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Teacher/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Teacher/List.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Teacher/List.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGVhY2hlclxMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/_ViewImports.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/_ViewStart.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Gabriela Alva/OneDrive - Instituto Tecnológico Superior de Purísima del Rincón/Desktop/PROJECT2/TecPurisima.School/TecPurisima.School.WebSite/Pages/Shared/_Layout.cshtml]
+[C:/Users/aliso/OneDrive/Escritorio/Proyecto de WebSite/TWM2/TecPurisima.School.WebSite/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-5wi7d9iwqu

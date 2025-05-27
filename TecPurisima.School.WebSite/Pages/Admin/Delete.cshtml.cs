@@ -15,7 +15,7 @@ public class Delete : PageModel
     
     private readonly IAdminService _service;
 
-    public Delete(AdminService service)
+    public Delete(IAdminService service)
     {
         _service = service;
     }

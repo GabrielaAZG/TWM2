@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.WebSite\\TecPurisima.School.WebSite.csproj": {}
+    "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.WebSite\\TecPurisima.School.WebSite.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj": {
+    "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj",
+        "projectUniqueName": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj",
         "projectName": "TecPurisima.School.Api",
-        "projectPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj",
-        "packagesPath": "C:\\Users\\Gabriela Alva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Api\\obj\\",
+        "projectPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj",
+        "packagesPath": "C:\\Users\\aliso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gabriela Alva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aliso\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {
-                "projectPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj"
+              "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {
+                "projectPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj"
               }
             }
           }
@@ -83,21 +83,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {
+    "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj",
+        "projectUniqueName": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj",
         "projectName": "TecPurisima.School.Core",
-        "projectPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj",
-        "packagesPath": "C:\\Users\\Gabriela Alva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\obj\\",
+        "projectPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj",
+        "packagesPath": "C:\\Users\\aliso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gabriela Alva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aliso\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -141,21 +141,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.WebSite\\TecPurisima.School.WebSite.csproj": {
+    "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.WebSite\\TecPurisima.School.WebSite.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.WebSite\\TecPurisima.School.WebSite.csproj",
+        "projectUniqueName": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.WebSite\\TecPurisima.School.WebSite.csproj",
         "projectName": "TecPurisima.School.WebSite",
-        "projectPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.WebSite\\TecPurisima.School.WebSite.csproj",
-        "packagesPath": "C:\\Users\\Gabriela Alva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.WebSite\\obj\\",
+        "projectPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.WebSite\\TecPurisima.School.WebSite.csproj",
+        "packagesPath": "C:\\Users\\aliso\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.WebSite\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Gabriela Alva\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\aliso\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -167,11 +167,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj": {
-                "projectPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj"
+              "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj": {
+                "projectPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Api\\TecPurisima.School.Api.csproj"
               },
-              "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {
-                "projectPath": "C:\\Users\\Gabriela Alva\\OneDrive - Instituto Tecnológico Superior de Purísima del Rincón\\Desktop\\PROJECT2\\TecPurisima.School\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj"
+              "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj": {
+                "projectPath": "C:\\Users\\aliso\\OneDrive\\Escritorio\\Proyecto de WebSite\\TWM2\\TecPurisima.School.Core\\TecPurisima.School.Core.csproj"
               }
             }
           }
@@ -215,7 +215,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.410/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.407/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
